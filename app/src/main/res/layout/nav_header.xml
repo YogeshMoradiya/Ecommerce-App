@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_margin="10dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"/>
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+         android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/uemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="contact@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

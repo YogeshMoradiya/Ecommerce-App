@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editproduct">
+
+
+    <ImageView
+        android:id="@+id/editimage"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="250dp"/>
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_below="@+id/editimage"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:textSize="20sp"/>
+
+    <EditText android:id="@+id/editprice"
+        android:layout_below="@+id/editname"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/border"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText android:id="@+id/editdes"
+        android:layout_below="@+id/editprice"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/border"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/editsave"
+        android:layout_below="@+id/editdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginStart="20dp"
+        android:text="Save"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Product">
+
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/p"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/s"
+                android:id="@+id/productimage"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/productimage"
+                android:id="@+id/pnlayout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:hint="productname"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/productname"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/pnlayout"
+                android:id="@+id/amlayout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:hint="price"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/productamount"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/deslayout"
+                android:layout_below="@+id/amlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adddescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_below="@id/deslayout"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/black"
+                android:textSize="20dp"
+                android:id="@+id/productsave"
+                android:layout_height="wrap_content"
+                android:text="save"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
